@@ -1,12 +1,12 @@
-# Bar do Igor – Lobby client
+# Bar do Igor – Cliente do Lobby
 
-Community lobby client for **Persona 4 Arena Ultimax** (PC). It adds a chat/lobby ("Bar do Igor") with matchmaking on top of the game's own online play.
+Cliente de lobby da comunidade para **Persona 4 Arena Ultimax** (PC). Adiciona um saguão com chat ("Bar do Igor") e pareamento por cima do online do próprio jogo.
 
-**Current test build: 0.2.31** (Windows and Linux/Proton). This is a test release for the Persona Arena Brasil community. Expect rough edges.
+**Versão de teste atual: 0.2.31** (Windows e Linux/Proton). É uma versão de teste para a comunidade Persona Arena Brasil. Espere arestas.
 
 ## Download
 
-Get the files from the [Releases](../../releases/latest) page:
+Baixe os arquivos na página de [Releases](../../releases/latest):
 
 - `BarDoIgor-windows.zip`
 - `BarDoIgor-linux.tar.gz`
@@ -18,28 +18,28 @@ e225a448acb4bbb2588b5c1c7709646d9931e9f5f1e364a77fca7f7c3f9c74b6  BarDoIgor-wind
 7c8089fb90fd30d923ad83f74bf0a63bb0150640e00038099762ff88a2c3f5ca  BarDoIgor-linux.tar.gz
 ```
 
-## Install
+## Instalação
 
-1. Extract the archive and copy everything inside `pasta_do_jogo/` next to `P4U2.exe` (Steam > right click > Manage > Browse local files).
-2. **Windows:** launch the game from Steam as usual.
-   **Linux:** `chmod +x p4au-lobby juntar_logs.sh`, then set the Steam launch option `WINEDLLOVERRIDES="version=n,b" %command%`.
-3. In game press **F10 > Servers**, enter the server address and port the organizer gives you, then **Connect**. When it turns green, the **LOBBY** button shows up under Network.
+1. Extraia o arquivo e copie tudo o que está dentro de `pasta_do_jogo/` para a pasta do P4AU, ao lado do `P4U2.exe` (Steam > botão direito no jogo > Gerenciar > Procurar arquivos locais).
+2. **Windows:** abra o jogo pela Steam normalmente.
+   **Linux:** rode `chmod +x p4au-lobby juntar_logs.sh` e coloque nas opções de inicialização da Steam: `WINEDLLOVERRIDES="version=n,b" %command%`.
+3. No jogo, aperte **F10 > Servidores**, digite o endereço e a porta que o organizador passar e clique em **Conectar**. Quando ficar verde, o botão **LOBBY** aparece em Network.
 
-To play without it, delete `p4au-lobby(.exe)`, `version.dll` and `lobby_config.dll` from the game folder. Your antivirus may flag it because the client reads the game's memory; allow the game folder.
+Para jogar sem o Bar do Igor, apague `p4au-lobby(.exe)`, `version.dll` e `lobby_config.dll` da pasta do jogo. O antivírus pode bloquear, porque o cliente lê a memória do jogo: libere a pasta do jogo.
 
-## Known issue: "Failed Connect"
+## Problema conhecido: "Failed Connect"
 
-After many rematches in a row, starting a new fight can fail with **Failed Connect**. We have not proven the cause yet, so treat what follows as a workaround, not a fix.
+Depois de muitas revanches seguidas, iniciar uma nova luta pode falhar com **Failed Connect**. Ainda não provamos a causa, então o que segue é um paliativo, não uma correção.
 
-- **Do not mash the confirm/READY button.** Mashing right after a match makes it worse. Press it once and wait.
-- If it fails, wait a few seconds and try again **once**.
-- If it fails again, **swap who hosts**: the other player becomes P1 and starts the match.
-- Still failing? Close and reopen the game and the client, then send us the logs.
+- **Não fique martelando o botão de confirmar/READY.** Martelar logo depois da partida piora. Aperte uma vez e espere.
+- Se falhar, espere alguns segundos e tente de novo **uma única vez**.
+- Se falhar de novo, **troquem quem hospeda**: o outro jogador vira o 1P e inicia a luta.
+- Continua falhando? Feche e abra de novo o jogo e o cliente, e nos mande os logs.
 
-## Sending logs
+## Enviando os logs
 
-After closing the game and the client, run `Juntar_logs.bat` (Windows) or `bash ./juntar_logs.sh` (Linux) in the game folder and send the generated `logs_bar_do_igor_<date>.zip` to the organizer. `config.toml` and `avatar_escolhido.json` are left out of the package.
+Depois de fechar o jogo e o cliente, rode `Juntar_logs.bat` (Windows) ou `bash ./juntar_logs.sh` (Linux) na pasta do jogo e mande o `logs_bar_do_igor_<data-hora>.zip` gerado ao organizador. O `config.toml` e o `avatar_escolhido.json` ficam fora do pacote.
 
-## Status
+## Estado
 
-No source code is published here yet; this repository only distributes test builds. Not affiliated with Atlus or Arc System Works.
+O código-fonte ainda não está publicado aqui; este repositório só distribui versões de teste. Sem ligação com a Atlus nem com a Arc System Works.
