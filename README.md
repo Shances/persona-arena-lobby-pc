@@ -4,6 +4,8 @@ Cliente de lobby da comunidade para **Persona 4 Arena Ultimax** (PC). Adiciona u
 
 **Versão de teste atual: 0.2.31** (Windows e Linux/Proton). É uma versão de teste para a comunidade Persona Arena Brasil. Espere arestas.
 
+> Projeto de estudo feito com ajuda de IA (vibe coding). Veja [Transparência](#transparência-feito-com-ia-vibe-coding).
+
 ## Download
 
 Baixe os arquivos na página de [Releases](../../releases/latest):
@@ -39,6 +41,10 @@ Depois de muitas revanches seguidas, iniciar uma nova luta pode falhar com **Fai
 ## Enviando os logs
 
 Depois de fechar o jogo e o cliente, rode `Juntar_logs.bat` (Windows) ou `bash ./juntar_logs.sh` (Linux) na pasta do jogo e mande o `logs_bar_do_igor_<data-hora>.zip` gerado ao organizador. O `config.toml` e o `avatar_escolhido.json` ficam fora do pacote.
+
+## Transparência: feito com IA (vibe coding)
+
+Este projeto foi desenvolvido com **muita ajuda de inteligência artificial** (vibe coding), como **projeto de estudo**. O código, os textos e os pacotes foram escritos e revisados com assistentes de IA, e eu testo e corrijo ao longo do caminho. Por isso, espere bugs, e leia o código e os binários com o cuidado de qualquer software de terceiros.
 
 ## Estado
 
